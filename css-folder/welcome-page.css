@@ -1,13 +1,16 @@
 body {
   margin: 0;
-  min-height: 100vh;
   background-color: rgb(208, 54, 54);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
+}
 
+.main-div{
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 p{
@@ -29,17 +32,17 @@ p{
   font-size: 255px;
   font-weight: 400;
 }
-.discription-p ,.welcome-p{
-  color: rgb(255, 194, 194);
-  font-weight: bold;
-  font-size: 15px;
-}
-.discription-div{
-  margin-top: -39px;
-}
 .welcome-div{
-  margin-bottom: -39px;
+  margin-bottom: -40px;
 }
 .welcome-p{
-  font-size: 20px;
+  font-size: 30px;
+  color: rgb(255, 194, 194);
+  font-weight: bold;
+}
+.second-discription-p{
+  font-size: 13px;
+  color: rgb(255, 194, 194);
+  position: absolute;
+  bottom: 80px;
 }
