@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: rgb(208, 54, 54);
+  background-color: rgb(253, 66, 66);
   font-family: "Inter", sans-serif;
 }
 
@@ -37,12 +37,12 @@ p{
 }
 .welcome-p{
   font-size: 30px;
-  color: rgb(255, 194, 194);
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 .second-discription-p{
   font-size: 13px;
-  color: rgb(255, 194, 194);
+  color: rgb(254, 209, 209);
   position: absolute;
   bottom: 80px;
 }
