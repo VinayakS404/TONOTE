@@ -52,4 +52,13 @@ p{
   font-weight: bold;
   color: white;
   padding-left: 80px;
+  padding-top: 80px;
+  line-height: 85px;
+}
+.welcome-sub-p{
+  text-align: start;
+  width: 100%;
+  padding-left: 170px;
+  padding-top: 30px;
+  color: rgb(255, 174, 174);
 }
