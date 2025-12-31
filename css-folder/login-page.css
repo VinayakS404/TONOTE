@@ -1,0 +1,200 @@
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  position: relative;
+}
+p{
+  margin: 0;
+}
+.main-div{
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  position: relative;
+}
+.back-btn{
+  position: absolute;
+  background-color: white;
+  z-index: 300;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  top: 30px;
+  left: 80px;
+}
+.return-icon{
+  height: 30px;
+  padding-top: 5px;
+}
+.welcome-div{
+  background-color: rgb(253, 66, 66);
+  flex: 1;
+  border-bottom-right-radius: 150px;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.login-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 232, 232);
+  flex: 1;
+  border-top-left-radius: 150px;
+  position: relative;
+  z-index: 100;
+}
+.bg-1{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(255, 232, 232);
+  left:550px;
+  bottom: 0px;
+  z-index: 0;
+}
+.bg-2{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(253, 66, 66);
+  left:750px;
+  z-index: 0;
+}
+.welcome-p{
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  padding-left: 80px;
+  padding-top: 80px;
+  line-height: 85px;
+}
+.welcome-sub-p{
+  text-align: start;
+  width: 100%;
+  padding-left: 170px;
+  padding-top: 30px;
+  color: rgb(254, 209, 209);
+}
+.user-icon, .lock-icon, .eye-icon{
+  height: 18px;
+}
+.login-sub-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 500px;
+  width: 400px;
+  border-radius: 30px;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.15);
+}
+.rem-forg-div{
+  display: flex;
+  align-items: center;
+  width: 280px;
+}
+.rem-forg-p-div{
+  display: flex;
+  align-items: center;
+}
+.input-username-div{
+  background-color: rgb(255, 232, 232);
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+  height: 38px;
+  padding-left: 20PX;
+  padding-right: 20PX;
+  border-radius: 10PX;
+}
+.input-password-div{
+  background-color: rgb(255, 232, 232);
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  height: 38px;
+  margin-bottom: 8px;
+  padding-left: 20PX;
+  padding-right: 20PX;
+  border-radius: 10PX;
+}
+.username-input{
+  background-color: rgb(255, 232, 232);
+  padding: none;
+  width: 210px;
+  height: 30px;
+  border: none;
+  color: rgb(253, 66, 66);
+  font-size: 16px;
+}
+.password-input{
+  background-color: rgb(255, 232, 232);
+  padding: none;
+  width: 210px;
+  height: 30px;
+  border: none;
+  color: rgb(253, 66, 66);
+  font-size: 16px;
+}
+.rem-forg-p-div{
+  flex: 1;
+}
+
+.remember-me-a{
+  font-size: 11px;
+  color: rgb(254, 150, 150);
+}
+.forget-password-p{
+  font-size: 11px;
+  color: rgb(253, 66, 66);
+  font-weight: bold;
+}
+.remember-me-input {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgb(253, 66, 66);
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  margin-right:8px;
+}
+.remember-me-input:checked::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: rgb(253, 66, 66);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.login-btn{
+  margin-top: 160px;
+  background-color: rgb(253, 66, 66);
+  border: none;
+  color: white;
+  height: 38px;
+  width: 290px;
+  border-radius: 20PX;
+  font-weight: bold;
+}
+.no-acc-p{
+  font-size: 13px;
+  margin-top: 10px;
+  color: rgb(254, 150, 150);
+}
+.sign-in-span{
+  color: rgb(253, 66, 66);
+  font-weight: bold;
+  text-decoration: underline
+}
