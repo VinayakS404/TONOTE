@@ -2,7 +2,7 @@ body {
   margin: 0;
   height: 100vh;
   font-family: "Inter", sans-serif;
-  background-color: rgb(253, 66, 66);;
+  background-color: rgb(253, 66, 66);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,7 +21,7 @@ p{
   padding-left: 80px;
   padding-right: 80px;
   border-top-left-radius: 64px;
-  border-top-right-radius: 54px;
+  border-top-right-radius: 64px;
   box-shadow: 50px 40px 3px rgba(108, 35, 35, 0.3);
   height: 100%;
 }
