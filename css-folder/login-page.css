@@ -24,7 +24,21 @@ p{
   top: 30px;
   left: 80px;
   cursor: pointer;
-  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  transition: background-color 0.1s,
+    text-shadow 0.1s,
+    top 0.1s,
+    left 0.1s,
+    box-shadow 0.1s;
+}
+.back-btn:hover{
+  opacity: 0.95;
+}
+.back-btn:active{
+  box-shadow: none;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  top: 31px;
+  left: 81px;
 }
 .return-icon{
   height: 30px;
