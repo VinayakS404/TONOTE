@@ -253,10 +253,17 @@ p{
 }
 .gfa-btn{
   border: none;
-  background-color: rgb(255, 243, 243);
+  background-color: rgb(255, 232, 232);
   padding: 4px 6px;
   border-radius: 10px;
   width: 60px;
+  transition: background-color 0.1s;
+}
+.gfa-btn:hover{
+    background-color: rgb(251, 200, 200);
+}
+.gfa-btn:active{
+    background-color: rgb(255, 255, 255);
 }
 .gfa-img{
   height: 25px;
