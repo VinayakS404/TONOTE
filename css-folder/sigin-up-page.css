@@ -118,7 +118,7 @@ p{
   flex-direction: column;
   align-items: center;
   background-color: rgb(255, 255, 255);
-  height: 500px;
+  height: 600px;
   width: 500px;
   border-radius: 30px;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.15);
@@ -133,7 +133,7 @@ p{
   align-items: center;
 }
 .sigin-p{
-  margin-top: 40px;
+  margin-top: 30px;
   font-size: 40px;
   font-weight: bolder;
   color: rgb(253, 66, 66);
@@ -141,16 +141,13 @@ p{
   margin-left: 128px;
 }
 .sigin-dis-p{
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-size: 12px;
   color: rgb(254, 150, 150);
   width: 250px;
   margin-left: -120px;
 }
-.password-p{
-  margin-top: 15px;
-}
-.password-p,.username-p{
+.password-p, .username-p, .confirm-password-p{
   margin-bottom: 5px;
   width: 100%;
   font-size: 14px;
@@ -162,6 +159,7 @@ p{
   display: flex;
   align-items: center;
   height: 38px;
+  margin-bottom: 8px;
   padding-left: 20PX;
   padding-right: 20PX;
   border-radius: 10PX;
@@ -196,46 +194,8 @@ p{
   color: rgb(253, 66, 66);
   font-size: 16px;
 }
-.rem-forg-p-div{
-  flex: 1;
-}
-
-.remember-me-a{
-  font-size: 11px;
-  color: rgb(254, 150, 150);
-}
-.forget-password-p{
-  font-size: 11px;
-  color: rgb(253, 66, 66);
-  font-weight: bold;
-  cursor: pointer;
-}
-.forget-password-p:hover{
-  text-decoration: underline;
-}
-.remember-me-input {
-  appearance: none;
-  width: 15px;
-  height: 15px;
-  border: 2px solid rgb(253, 66, 66);
-  border-radius: 50%;
-  cursor: pointer;
-  position: relative;
-  margin-right:8px;
-}
-.remember-me-input:checked::after {
-  content: "";
-  width: 8px;
-  height: 8px;
-  background-color: rgb(253, 66, 66);
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .sigin-btn{
-  margin-top: 80px;
+  margin-top: 50px;
   background-color: rgb(253, 66, 66);
   border: none;
   color: white;
@@ -252,6 +212,21 @@ p{
     margin-bottom 0.1s,
     box-shadow 0.1s;
 }
+.or-div{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.border-div{
+  width: 100px;
+  border-top: solid rgb(255, 201, 201) 1px;
+}
+.or-p{
+  color: rgb(254, 150, 150);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+}
 .sigin-btn:hover{
   background-color: rgb(255, 83, 83);
   text-shadow: 2px 2px 3px rgba(255, 0, 0, 1);
@@ -265,11 +240,25 @@ p{
 }
 .no-acc-p{
   font-size: 13px;
-  margin-top: 10px;
+  margin-top: 20px;
   color: rgb(254, 150, 150);
 }
 .sign-in-span{
   color: rgb(253, 66, 66);
   font-weight: bold;
   text-decoration: underline
+}
+.gfa-div{
+  margin-top: 20px;
+}
+.gfa-btn{
+  border: none;
+  background-color: rgb(255, 243, 243);
+  padding: 4px 6px;
+  border-radius: 10px;
+  width: 60px;
+}
+.gfa-img{
+  height: 25px;
+  padding-top: 3px;
 }
