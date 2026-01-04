@@ -10,12 +10,17 @@ img {
 }
 
 .main-body {
-  height: 100vh;
   display: flex;
   background-color: rgb(255, 255, 255);
+  position: relative;
+  height: 3000px;
 }
 
 .menu-div {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
   width: 300px;
   background-color: rgb(253, 66, 66);
   display: flex;
@@ -23,20 +28,49 @@ img {
   align-items: center;
 }
 .task-view-div {
-  flex: 1;
   width: 750px;
   background-color: rgb(255, 255, 255);
-  margin-left: auto;
+  width: 750px;
+  margin-left: 305px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.search-div {
+  display: flex;
+  align-items: center;
+  background-color: rgb(253, 232, 232);
+  margin-top: 30px;
+  width: 700px;
+  height: 40px;
+  border-radius: 30px;
+  overflow: hidden;
+  position: fixed;
+}
+#search-input {
+  border: none;
+  background: none;
+  padding-left: 20px;
+  flex: 1;
+  height: 100%;
+  font-size: 16px;
+  color: rgb(253, 66, 66);
+}
+#search-input::placeholder {
+  color: rgb(253, 66, 66);
 }
 .edit-div {
-  background-color: rgb(252, 233, 233);
+  background-color: rgb(255, 226, 226);
   width: 450px;
+  height: 755px;
   margin: 10px;
   border-radius: 20px;
+  position: fixed;
+  right: 0;
 }
 .menu-fill-divs {
   width: 100%;
-  /*background-color: rgba(255, 255, 255, 0.329);*/
   margin: 10px;
   padding-left: 35px;
   padding-right: 20px;
@@ -53,11 +87,11 @@ img {
 }
 .burger-bar-img {
   margin-left: auto;
-  height: 25px;
+  height: 27px;
 }
 .menu-p {
   color: white;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 500;
 }
 .sub-titles {
@@ -73,7 +107,19 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 8px 5px;
   border-radius: 8px;
-  transition: ba;
+  transition: background-color 0.1s;
+}
+.tasks-sub-div:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.calander-div:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.tasks-sub-div:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.calander-div:active {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .upcoming-today-p,
 .calendar-p,
@@ -124,6 +170,15 @@ img {
   margin-right: 14px;
   transition: width 0.1s, height 0.1s;
 }
+.list-color-1 {
+  background-color: rgb(255, 82, 82);
+}
+.list-color-2 {
+  background-color: rgb(105, 216, 252);
+}
+.list-color-3 {
+  background-color: rgb(255, 224, 101);
+}
 .list-color:hover {
   width: 15px;
   height: 15px;
@@ -142,17 +197,23 @@ img {
   border-radius: 8px;
   transition: background-color 0.1s;
 }
+.menu-settings-div:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .color-div:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
 .add-list-div:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
+.menu-settings-div:active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 .color-div:active {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .add-list-div:active {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .sub-exist-list-div {
   margin-bottom: 15px;
