@@ -2,6 +2,9 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
 }
+p {
+  margin: 0;
+}
 
 .main-body {
   height: 100vh;
@@ -19,7 +22,12 @@ body {
   margin-left: auto;
 }
 .edit-div {
-  background-color: rgb(249, 239, 239);
+  background-color: rgb(252, 233, 233);
   width: 450px;
   margin-left: auto;
+  margin: 10px 10px;
+  border-radius: 20px;
+}
+img {
+  height: 30px;
 }
