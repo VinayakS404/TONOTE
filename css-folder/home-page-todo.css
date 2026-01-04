@@ -88,6 +88,16 @@ img {
 .burger-bar-img {
   margin-left: auto;
   height: 27px;
+  background-color: rgba(255, 183, 183, 0);
+  border-radius: 5px;
+  padding: 2px;
+  transition: background-color 0.1s;
+}
+.burger-bar-img:hover {
+  background-color: rgba(255, 183, 183, 0.4);
+}
+.burger-bar-img:active {
+  background-color: rgba(255, 183, 183, 0.2);
 }
 .menu-p {
   color: white;
