@@ -1,19 +1,18 @@
-
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
   position: relative;
 }
-p{
+p {
   margin: 0;
 }
-.main-div{
+.main-div {
   display: flex;
   height: 100vh;
   flex-direction: row;
   position: relative;
 }
-.back-btn{
+.back-btn {
   position: absolute;
   background-color: white;
   z-index: 300;
@@ -24,27 +23,24 @@ p{
   top: 30px;
   left: 80px;
   cursor: pointer;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
-  transition: background-color 0.1s,
-    text-shadow 0.1s,
-    top 0.1s,
-    left 0.1s,
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.1s, text-shadow 0.1s, top 0.1s, left 0.1s,
     box-shadow 0.1s;
 }
-.back-btn:hover{
+.back-btn:hover {
   opacity: 0.95;
 }
-.back-btn:active{
+.back-btn:active {
   box-shadow: none;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   top: 31px;
   left: 81px;
 }
-.return-icon{
+.return-icon {
   height: 30px;
   padding-top: 5px;
 }
-.welcome-div{
+.welcome-div {
   background-color: rgb(253, 66, 66);
   flex: 1;
   border-bottom-right-radius: 150px;
@@ -56,7 +52,7 @@ p{
   justify-content: center;
   padding-bottom: 100px;
 }
-.login-div{
+.login-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,24 +63,24 @@ p{
   position: relative;
   z-index: 100;
 }
-.bg-1{
+.bg-1 {
   position: absolute;
   width: 300px;
   height: 200px;
   background-color: rgb(255, 232, 232);
-  left:550px;
+  left: 550px;
   bottom: 0px;
   z-index: 0;
 }
-.bg-2{
+.bg-2 {
   position: absolute;
   width: 200px;
   height: 200px;
   background-color: rgb(253, 66, 66);
-  left:750px;
+  left: 750px;
   z-index: 0;
 }
-.welcome-p{
+.welcome-p {
   font-size: 100px;
   font-weight: bold;
   color: white;
@@ -92,20 +88,22 @@ p{
   padding-top: 80px;
   line-height: 85px;
 }
-.welcome-sub-p{
+.welcome-sub-p {
   text-align: start;
   width: 100%;
   padding-left: 170px;
   padding-top: 30px;
   color: rgb(254, 209, 209);
 }
-.user-icon, .lock-icon, .eye-icon{
+.user-icon,
+.lock-icon,
+.eye-icon {
   height: 18px;
 }
-.eye-icon{
+.eye-icon {
   cursor: pointer;
 }
-.login-sub-div{
+.login-sub-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,16 +113,16 @@ p{
   border-radius: 30px;
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.15);
 }
-.rem-forg-div{
+.rem-forg-div {
   display: flex;
   align-items: center;
   width: 380px;
 }
-.rem-forg-p-div{
+.rem-forg-p-div {
   display: flex;
   align-items: center;
 }
-.sigin-p{
+.sigin-p {
   margin-top: 40px;
   font-size: 40px;
   font-weight: bolder;
@@ -132,43 +130,44 @@ p{
   width: 100%;
   margin-left: 128px;
 }
-.sigin-dis-p{
+.sigin-dis-p {
   margin-bottom: 30px;
   font-size: 12px;
   color: rgb(254, 150, 150);
   width: 250px;
   margin-left: -120px;
 }
-.password-p{
+.password-p {
   margin-top: 15px;
 }
-.password-p,.username-p{
+.password-p,
+.username-p {
   margin-bottom: 5px;
   width: 100%;
   font-size: 14px;
   margin-left: 128px;
   color: rgb(253, 66, 66);
 }
-.input-username-div{
+.input-username-div {
   background-color: rgb(255, 232, 232);
   display: flex;
   align-items: center;
   height: 38px;
-  padding-left: 20PX;
-  padding-right: 20PX;
-  border-radius: 10PX;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
 }
-.input-password-div{
+.input-password-div {
   background-color: rgb(255, 232, 232);
   display: flex;
   align-items: center;
   height: 38px;
   margin-bottom: 8px;
-  padding-left: 20PX;
-  padding-right: 20PX;
-  border-radius: 10PX;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
 }
-.username-input{
+.username-input {
   background-color: rgb(255, 232, 232);
   padding: none;
   padding-left: 10px;
@@ -178,7 +177,7 @@ p{
   color: rgb(253, 66, 66);
   font-size: 16px;
 }
-.password-input{
+.password-input {
   background-color: rgb(255, 232, 232);
   padding: none;
   padding-left: 10px;
@@ -188,21 +187,21 @@ p{
   color: rgb(253, 66, 66);
   font-size: 16px;
 }
-.rem-forg-p-div{
+.rem-forg-p-div {
   flex: 1;
 }
 
-.remember-me-a{
+.remember-me-a {
   font-size: 11px;
   color: rgb(254, 150, 150);
 }
-.forget-password-p{
+.forget-password-p {
   font-size: 11px;
   color: rgb(253, 66, 66);
   font-weight: bold;
   cursor: pointer;
 }
-.forget-password-p:hover{
+.forget-password-p:hover {
   text-decoration: underline;
 }
 .remember-me-input {
@@ -213,7 +212,7 @@ p{
   border-radius: 50%;
   cursor: pointer;
   position: relative;
-  margin-right:8px;
+  margin-right: 8px;
 }
 .remember-me-input:checked::after {
   content: "";
@@ -226,42 +225,38 @@ p{
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.login-btn{
+.login-btn {
   margin-top: 80px;
   background-color: rgb(253, 66, 66);
   border: none;
   color: white;
   height: 38px;
   width: 380px;
-  border-radius: 20PX;
+  border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
-  transition: background-color 0.1s,
-    text-shadow 0.1s,
-    margin-top 0.1s,
-    margin-left 0.1s,
-    margin-bottom 0.1s,
-    box-shadow 0.1s;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.1s, text-shadow 0.1s, margin-top 0.1s,
+    margin-left 0.1s, margin-bottom 0.1s, box-shadow 0.1s;
 }
-.login-btn:hover{
+.login-btn:hover {
   background-color: rgb(255, 83, 83);
   text-shadow: 2px 2px 3px rgba(255, 0, 0, 1);
 }
-.login-btn:active{
+.login-btn:active {
   box-shadow: none;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   margin-top: 82px;
   margin-left: 2px;
   margin-bottom: -2px;
 }
-.no-acc-p{
+.no-acc-p {
   font-size: 13px;
   margin-top: 10px;
   color: rgb(254, 150, 150);
 }
-.sign-in-span{
+.sign-in-span {
   color: rgb(253, 66, 66);
   font-weight: bold;
-  text-decoration: underline
+  text-decoration: underline;
 }

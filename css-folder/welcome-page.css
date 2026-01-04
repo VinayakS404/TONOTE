@@ -4,7 +4,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.main-div{
+.main-div {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,34 +13,34 @@ body {
   position: relative;
 }
 
-p{
+p {
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
-.logo-div{
+.logo-div {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.logo-img{
+.logo-img {
   height: 160px;
   padding-bottom: 5px;
 }
-.logo-title{
+.logo-title {
   font-family: "Smooch Sans", sans-serif;
   color: white;
   font-size: 255px;
   font-weight: 400;
 }
-.welcome-div{
+.welcome-div {
   margin-bottom: -40px;
 }
-.welcome-p{
+.welcome-p {
   font-size: 30px;
   color: rgb(255, 255, 255);
   font-weight: bold;
 }
-.second-discription-p{
+.second-discription-p {
   font-size: 13px;
   color: rgb(254, 209, 209);
   position: absolute;
