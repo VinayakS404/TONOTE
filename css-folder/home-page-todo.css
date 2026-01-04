@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.main-body {
+  height: 100vh;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+
+.menu-div {
+  width: 300px;
+  background-color: rgb(253, 66, 66);
+}
+.task-view-div {
+  width: 750px;
+  background-color: rgb(255, 255, 255);
+  margin-left: auto;
+}
+.edit-div {
+  background-color: rgb(249, 239, 239);
+  width: 450px;
+  margin-left: auto;
+}
