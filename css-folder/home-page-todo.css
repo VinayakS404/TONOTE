@@ -43,8 +43,9 @@ img {
   box-sizing: border-box;
 }
 .menu-header-div {
-  padding-left: 30px;
-  padding-right: 15px;
+  padding-left: 28px;
+  padding-right: 13px;
+  margin-bottom: 10px;
 }
 .menu-header {
   display: flex;
@@ -72,9 +73,11 @@ img {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 8px 5px;
   border-radius: 8px;
+  transition: ba;
 }
 .upcoming-today-p,
-.calendar-p {
+.calendar-p,
+.add-list {
   flex: 1;
   padding-left: 10px;
   font-size: 15px;
@@ -129,7 +132,9 @@ img {
   width: 10px;
   height: 10px;
 }
-.color-div {
+.color-div,
+.add-list-div,
+.menu-settings-div {
   display: flex;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.3);
@@ -140,7 +145,13 @@ img {
 .color-div:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
+.add-list-div:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 .color-div:active {
+  background-color: rgba(255, 255, 255, 0);
+}
+.add-list-div:active {
   background-color: rgba(255, 255, 255, 0);
 }
 .sub-exist-list-div {
@@ -149,8 +160,29 @@ img {
   flex-direction: column;
   gap: 5px;
 }
-.list-color-p {
+.list-color-settings-p {
   flex: 1;
   color: white;
   font-size: 15px;
+}
+.add-list-div {
+  display: flex;
+}
+.list-add-img {
+  height: 13px;
+  padding-left: 4px;
+}
+.menu-settings-n-sign-out-div {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.menu-setting-img,
+.menu-sign-out-img {
+  height: 13px;
+  padding-left: 4px;
+}
+.setting-p {
+  padding-left: 11px;
 }
