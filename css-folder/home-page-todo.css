@@ -107,3 +107,50 @@ img {
   flex-direction: column;
   gap: 5px;
 }
+.color-div {
+  display: flex;
+  justify-content: center;
+}
+.list-color {
+  background-color: rgb(0, 255, 229);
+  width: 10px;
+  height: 10px;
+  border: solid rgb(255, 255, 255) 1px;
+  border-radius: 2px;
+  margin-left: 4px;
+  margin-right: 14px;
+  transition: width 0.1s, height 0.1s;
+}
+.list-color:hover {
+  width: 15px;
+  height: 15px;
+}
+.list-color:active {
+  width: 10px;
+  height: 10px;
+}
+.color-div {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 8px 5px;
+  border-radius: 8px;
+  transition: background-color 0.1s;
+}
+.color-div:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.color-div:active {
+  background-color: rgba(255, 255, 255, 0);
+}
+.sub-exist-list-div {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.list-color-p {
+  flex: 1;
+  color: white;
+  font-size: 15px;
+}
