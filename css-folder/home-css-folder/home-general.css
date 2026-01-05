@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+p {
+  margin: 0;
+}
+img {
+  height: 30px;
+}
+input:focus {
+  outline: none;
+}
