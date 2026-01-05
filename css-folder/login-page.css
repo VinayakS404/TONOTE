@@ -238,6 +238,7 @@ p {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
   transition: background-color 0.1s, text-shadow 0.1s, margin-top 0.1s,
     margin-left 0.1s, margin-bottom 0.1s, box-shadow 0.1s;
+  overflow: hidden;
 }
 .login-btn:hover {
   background-color: rgb(255, 83, 83);
