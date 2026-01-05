@@ -6,6 +6,9 @@ body {
 p {
   margin: 0;
 }
+input:focus {
+  outline: none;
+}
 .main-div {
   display: flex;
   height: 100vh;
