@@ -1,8 +1,7 @@
 .task-view-div {
   width: 750px;
   background-color: rgb(255, 255, 255);
-  width: 750px;
-  margin-left: 305px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,22 +9,37 @@
 }
 
 .search-container-div {
-  background-color: rgb(41, 35, 35);
   height: 100px;
   width: 100%;
   display: flex;
+  background-color: #fff;
   justify-content: center;
   align-items: center;
   position: fixed;
   z-index: 100;
+  border-bottom: solid 1px rgb(255, 210, 210);
 }
 .search-div {
   align-items: center;
-  background-color: rgb(253, 232, 232);
+  background-color: rgb(255, 226, 226);
   width: 700px;
   height: 40px;
+  margin-right: 155px;
   border-radius: 30px;
   overflow: hidden;
+}
+
+#search-input {
+  border: none;
+  background: none;
+  padding-left: 20px;
+  flex: 1;
+  height: 100%;
+  font-size: 16px;
+  color: rgb(253, 66, 66);
+}
+#search-input::placeholder {
+  color: rgb(253, 66, 66);
 }
 
 .task-view-sub-div {
@@ -33,6 +47,7 @@
   width: 700px;
   height: 100%;
   margin-top: 120px;
+  margin-right: 155px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border: solid 1px rgb(255, 210, 210);
