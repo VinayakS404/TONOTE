@@ -8,13 +8,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.main-body {
-  display: flex;
-  background-color: rgb(255, 255, 255);
-  position: relative;
-  height: 3000px;
+  position: fixed;
+  z-index: 200;
 }
 .all-tasks-div {
   display: flex;

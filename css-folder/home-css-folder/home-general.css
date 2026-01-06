@@ -11,3 +11,10 @@ img {
 input:focus {
   outline: none;
 }
+
+.main-body {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  height: 3000px;
+}
