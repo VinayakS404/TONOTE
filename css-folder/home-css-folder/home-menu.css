@@ -4,12 +4,13 @@
   bottom: 0;
   left: 0;
   width: 300px;
-  background-color: rgb(253, 66, 66);
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
   position: fixed;
   z-index: 200;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 .all-tasks-div {
   display: flex;
@@ -18,6 +19,7 @@
   padding: 8px 5px;
   border-radius: 8px;
   transition: background-color 0.1s;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 .all-tasks-div:hover {
   background-color: rgb(255, 255, 255);
@@ -77,13 +79,13 @@
   background-color: rgba(255, 183, 183, 0.2);
 }
 .menu-p {
-  color: white;
+  color: rgb(253, 66, 66);
   font-size: 25px;
   font-weight: 500;
 }
 .sub-titles {
   font-size: 18px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 125, 125);
   font-weight: 500;
   margin-bottom: 10px;
 }
@@ -92,22 +94,22 @@
 .calander-div {
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 0, 0, 0.121);
   padding: 8px 5px;
   border-radius: 8px;
   transition: background-color 0.1s;
 }
 .tasks-sub-div:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 0, 0, 0.199);
 }
 .calander-div:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 0, 0, 0.199);
 }
 .tasks-sub-div:active {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 0, 0, 0.089);
 }
 .calander-div:active {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 0, 0, 0.089);
 }
 .upcoming-today-p,
 .calendar-p,
@@ -115,7 +117,7 @@
   flex: 1;
   padding-left: 10px;
   font-size: 15px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .number-div {
   background-color: rgb(255, 255, 255);
@@ -125,6 +127,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 .number-p {
   font-size: 12px;
@@ -153,13 +156,14 @@
   width: 10px;
   height: 10px;
   border: solid rgb(255, 255, 255) 1px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   margin-left: 4px;
   margin-right: 14px;
   transition: width 0.1s, height 0.1s;
 }
 .list-color-1 {
-  background-color: rgb(255, 82, 82);
+  background-color: rgb(255, 75, 75);
 }
 .list-color-2 {
   background-color: rgb(105, 216, 252);
@@ -180,28 +184,28 @@
 .menu-settings-div {
   display: flex;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 0, 0, 0.121);
   padding: 8px 5px;
   border-radius: 8px;
   transition: background-color 0.1s;
 }
 .menu-settings-div:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 0, 0, 0.199);
 }
 .color-div:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 0, 0, 0.199);
 }
 .add-list-div:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 0, 0, 0.199);
 }
 .menu-settings-div:active {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 0, 0, 0.089);
 }
 .color-div:active {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 0, 0, 0.089);
 }
 .add-list-div:active {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 0, 0, 0.089);
 }
 .sub-exist-list-div {
   margin-bottom: 15px;
@@ -211,7 +215,7 @@
 }
 .list-color-settings-p {
   flex: 1;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 15px;
 }
 .add-list-div {
