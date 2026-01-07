@@ -117,7 +117,7 @@
   flex: 1;
   padding-left: 10px;
   font-size: 15px;
-  color: rgb(0, 0, 0);
+  color: #ff7373;
 }
 .number-div {
   background-color: rgb(255, 255, 255);
@@ -215,7 +215,7 @@
 }
 .list-color-settings-p {
   flex: 1;
-  color: rgb(0, 0, 0);
+  color: #ff7373;
   font-size: 15px;
 }
 .add-list-div {
