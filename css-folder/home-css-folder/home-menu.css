@@ -1,6 +1,6 @@
 .menu-div {
   position: fixed;
-  top: 0;
+  top: 100px;
   bottom: 0;
   left: 0;
   width: 300px;
@@ -11,6 +11,7 @@
   position: fixed;
   z-index: 200;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
 }
 .all-tasks-div {
   display: flex;
