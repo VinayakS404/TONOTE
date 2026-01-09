@@ -58,3 +58,8 @@
   background-color: rgb(171, 220, 221);
   margin-top: 85px;
 }
+.task-content-container {
+  background-color: rebeccapurple;
+  width: 300px;
+  height: 300px;
+}
