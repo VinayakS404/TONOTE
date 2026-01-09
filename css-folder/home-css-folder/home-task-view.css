@@ -55,14 +55,14 @@
 .task-view-container-sub-div {
   width: 1050px;
   height: 100%;
-  background-color: rgb(255, 223, 223);
-  margin-top: 85px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .task-content-container {
-  background-color: rgb(246, 238, 254);
+  background-color: rgb(255, 255, 255);
   width: 900px;
   height: 100%;
   margin-top: 30px;
@@ -76,18 +76,28 @@
   padding: 10px auto;
 }
 .task-container-date-p {
-  margin-top: 35px;
   margin-bottom: 5px;
 }
 .task-day-single-div {
   margin-bottom: 10px;
-  border-top: solid rgb(255, 110, 110) 1px;
-  border-bottom: solid #ff6a6a 1px;
+  border: solid rgb(255, 255, 255) 1px;
+}
+.task-day-single-with-date-div {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: solid rgba(255, 110, 110, 0.449) 1px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.task-day-single-head-input {
+  width: 20px;
+  height: 20px;
 }
 .task-day-single-head-div {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(255, 219, 215);
+  background-color: rgb(251, 213, 213);
 }
 .task-day-single-head-sub-div {
   flex: 1;
@@ -98,12 +108,18 @@
   margin-left: 10px;
 }
 .task-day-single-body-div {
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(255, 255, 255);
 }
 .task-day-single-head-p {
   font-size: 18px;
   font-weight: bold;
 }
+.task-day-single-body-div {
+  background-color: rgb(252, 239, 239);
+  margin-top: 5px;
+}
 .task-day-single-body-discr-p {
   padding-left: 30px;
+  width: 700px;
+  padding: 5px;
 }
