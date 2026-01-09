@@ -245,15 +245,3 @@
 .sigin-out-a {
   text-decoration: none;
 }
-
-/*-------------------*/
-
-.menu-inactive-div {
-  background-color: rgb(255, 110, 110);
-  height: 670px;
-  width: 60px;
-  position: fixed;
-  top: 97px;
-  bottom: 0;
-  left: 0;
-}
