@@ -316,12 +316,16 @@ input:focus {
   .sigin-div {
     border-top-left-radius: 0px;
   }
-
   .sigin-sub-div {
     height: 600px;
     width: 450px;
     border-radius: 30px;
     box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.15);
+  }
+  .password-p,
+  .username-p,
+  .confirm-password-p {
+    margin-left: 78px;
   }
 }
 @media screen {
