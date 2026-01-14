@@ -1,3 +1,6 @@
+* {
+  transition: all 0.5s ease;
+}
 .task-view-div {
   height: 100%;
   position: relative;
@@ -76,6 +79,7 @@
   width: 100%;
   padding: 10px auto;
 }
+
 .task-container-date-p {
   margin-bottom: 5px;
   color: #797979;
@@ -124,6 +128,38 @@
 }
 .task-day-single-body-discr-p {
   padding-left: 30px;
-  width: 700px;
   padding: 5px;
+}
+@media (max-width: 1485px) {
+  .task-day-group-container {
+    width: 800px;
+  }
+  .task-day-single-body-discr-p {
+    width: 750px;
+  }
+  .task-content-container {
+    align-items: start;
+  }
+}
+@media (max-width: 1383px) {
+  .task-day-group-container {
+    width: 700px;
+  }
+  .task-day-single-body-discr-p {
+    width: 650px;
+  }
+  .task-content-container {
+    align-items: start;
+  }
+}
+@media (max-width: 1283px) {
+  .task-day-group-container {
+    width: 600px;
+  }
+  .task-day-single-body-discr-p {
+    width: 550px;
+  }
+  .task-content-container {
+    align-items: start;
+  }
 }
