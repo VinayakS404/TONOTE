@@ -7,3 +7,6 @@ The project is currently in its **initial development stage** and is still a wor
 - Todo list interface
 - Notes section
 - Clean and simple UI
+
+## Current progress 
+- Working with **media queries**
