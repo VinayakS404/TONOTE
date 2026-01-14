@@ -71,7 +71,7 @@
   height: 100%;
   margin-top: 30px;
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
 }
 .task-day-group-container {
@@ -137,9 +137,6 @@
   .task-day-single-body-discr-p {
     width: 750px;
   }
-  .task-content-container {
-    align-items: start;
-  }
 }
 @media (max-width: 1383px) {
   .task-day-group-container {
@@ -148,9 +145,6 @@
   .task-day-single-body-discr-p {
     width: 650px;
   }
-  .task-content-container {
-    align-items: start;
-  }
 }
 @media (max-width: 1283px) {
   .task-day-group-container {
@@ -158,8 +152,5 @@
   }
   .task-day-single-body-discr-p {
     width: 550px;
-  }
-  .task-content-container {
-    align-items: start;
   }
 }
