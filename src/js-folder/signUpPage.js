@@ -1,5 +1,6 @@
 import { userData } from "./usernameNPassword.js";
 
+const usernameInpElement = document.querySelector(".js-username-inp");
 const passwordInpElement = document.querySelector(".js-password-inp");
 const eyeIconElement = document.querySelector(".js-eye-icon");
 const confirmPasswordInpElement = document.querySelector(
@@ -7,8 +8,10 @@ const confirmPasswordInpElement = document.querySelector(
 );
 const confirmEyeIconElement = document.querySelector(".js-confirm-eye-icon");
 const signBtnElement = document.querySelector(".js-sign-btn");
-const usernameInpElement = document.querySelector(".js-username-inp");
 const signUpStatusElement = document.querySelector(".js-sign-up-status");
+
+let timeoutKey1;
+let timeoutKey2;
 
 eyeIconElement.addEventListener("click", () => {
   if (passwordInpElement.type === "password") {
@@ -33,42 +36,62 @@ confirmEyeIconElement.addEventListener("click", () => {
 signBtnElement.addEventListener("click", () => {
   let currentUsername = usernameInpElement.value;
   let currentPassword = passwordInpElement.value;
-  if (currentUsername && currentPassword) {
-    let a = true;
+  let confirmPassword = confirmPasswordInpElement.value;
 
-    for (let i = 0; i < userData.length; i++) {
-      if (
-        currentUsername === userData[i].username &&
-        currentPassword === userData[i].password
-      ) {
-        a = false;
+  if (!currentUsername && !currentPassword) {
+    signUpStatusElement.innerHTML = "Please fill in all required fields.";
+    return;
+  }
+  if (!currentPassword) {
+    signUpStatusElement.innerHTML = "Please enter a password.";
+    return;
+  }
+  if (!currentUsername) {
+    signUpStatusElement.innerHTML = "Please enter a username.";
+    return;
+  }
+  if (currentPassword && !confirmPassword) {
+    signUpStatusElement.innerHTML = "Please confirm your password.";
+    return;
+  }
+  if (currentPassword !== confirmPassword) {
+    signUpStatusElement.innerHTML = "Passwords do not match.";
+    return;
+  }
+  let userExist = false;
+
+  signUpStatusElement.innerHTML = "";
+
+  for (let i = 0; i < userData.length; i++) {
+    if (
+      (currentUsername === userData[i].username &&
+        currentPassword === userData[i].password) ||
+      currentUsername === userData[i].username
+    ) {
+      if (timeoutKey2) {
+        clearTimeout(timeoutKey2);
       }
-    }
 
-    if (a) {
-      userData.push({
-        username: usernameInpElement.value,
-        password: passwordInpElement.value,
-      });
-      usernameInpElement.value = "";
-      passwordInpElement.value = "";
-    }
-  } else {
-    if (currentUsername) {
-      signUpStatusElement.innerHTML = "Enter Password";
-      setInterval(() => {
+      signUpStatusElement.innerHTML = "This username is already taken.";
+      timeoutKey2 = setTimeout(() => {
         signUpStatusElement.innerHTML = "";
       }, 3000);
-    } else if (currentPassword) {
-      signUpStatusElement.innerHTML = "Enter Username";
-      setInterval(() => {
-        signUpStatusElement.innerHTML = "";
-      }, 3000);
-    } else {
-      signUpStatusElement.innerHTML = "Enter Username and Password";
-      setInterval(() => {
-        signUpStatusElement.innerHTML = "";
-      }, 3000);
+      userExist = true;
+      return;
     }
   }
+
+  if (!userExist) {
+    usernameInpElement.value = "";
+    passwordInpElement.value = "";
+    confirmPasswordInpElement.value = "";
+    userData.push({
+      username: currentUsername,
+      password: currentPassword,
+    });
+    //return;
+  }
+
+  console.log(userData);
+  window.location.href = "./home-page-todo.html";
 });
