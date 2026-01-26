@@ -1,6 +1,6 @@
-const userData = {};
-const passwordInpElement = document.querySelector(".js-password-inp");
-const eyeIconElement = document.querySelector(".js-eye-icon");
-const confirmPasswordInpElement = document.querySelector(
-  ".js-confirm-password-inp",
-);
+export const userData = [
+  { username: "1apple", password: "_1apple" },
+  { username: "2apple", password: "_2apple" },
+  { username: "3apple", password: "_3apple" },
+  { username: "a", password: "a" },
+];
