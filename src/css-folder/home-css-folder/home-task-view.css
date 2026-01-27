@@ -1,5 +1,5 @@
 * {
-  transition: all 0.5s ease;
+  transition: all 0.1s ease;
 }
 .task-view-div {
   height: 100%;
@@ -51,6 +51,12 @@
   padding: 5px;
   border-radius: 6px;
   border: solid rgba(255, 255, 255, 0.385) 1px;
+}
+.search-sub-img:hover {
+  background-color: #ff8080;
+}
+.search-sub-img:active {
+  background-color: #ffbaba;
 }
 .profile-img {
   height: 45px;
