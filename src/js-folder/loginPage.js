@@ -2,6 +2,8 @@ const usernameInpElement = document.querySelector(".js-username-inp");
 const passwordInpElement = document.querySelector(".js-password-inp");
 const eyeIconElement = document.querySelector(".js-eye-icon");
 const loginBtnElement = document.querySelector(".js-login-btn");
+const signUpStatusElement = document.querySelector(".js-sign-up-status");
+
 import { userData } from "./usernameNPassword.js";
 
 eyeIconElement.addEventListener("click", () => {
@@ -18,6 +20,20 @@ loginBtnElement.addEventListener("click", () => {
   let currentUsername = usernameInpElement.value;
   let currentPassword = passwordInpElement.value;
 
+  if (!currentUsername && !currentPassword) {
+    signUpStatusElement.innerHTML = "Please fill in all required fields.";
+    return;
+  }
+  if (!currentPassword) {
+    signUpStatusElement.innerHTML = "Please enter a password.";
+    return;
+  }
+  if (!currentUsername) {
+    signUpStatusElement.innerHTML = "Please enter a username.";
+    return;
+  }
+  let userExist = false;
+
   for (let i = 0; i < userData.length; i++) {
     if (
       userData[i].username === currentUsername &&
@@ -25,6 +41,8 @@ loginBtnElement.addEventListener("click", () => {
     ) {
       window.location.href = "home-page-todo.html";
       console.log("hi");
+    } else {
+      signUpStatusElement.innerHTML = "Incorrect username or password";
     }
   }
 });
