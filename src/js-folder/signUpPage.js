@@ -10,8 +10,7 @@ const confirmEyeIconElement = document.querySelector(".js-confirm-eye-icon");
 const signBtnElement = document.querySelector(".js-sign-btn");
 const signUpStatusElement = document.querySelector(".js-sign-up-status");
 
-let timeoutKey1;
-let timeoutKey2;
+let timeoutKey;
 
 eyeIconElement.addEventListener("click", () => {
   if (passwordInpElement.type === "password") {
@@ -68,12 +67,12 @@ signBtnElement.addEventListener("click", () => {
         currentPassword === userData[i].password) ||
       currentUsername === userData[i].username
     ) {
-      if (timeoutKey2) {
-        clearTimeout(timeoutKey2);
+      if (timeoutKey) {
+        clearTimeout(timeoutKey);
       }
 
       signUpStatusElement.innerHTML = "This username is already taken.";
-      timeoutKey2 = setTimeout(() => {
+      timeoutKey = setTimeout(() => {
         signUpStatusElement.innerHTML = "";
       }, 3000);
       userExist = true;
