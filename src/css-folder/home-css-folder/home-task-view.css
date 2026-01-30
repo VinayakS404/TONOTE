@@ -92,7 +92,6 @@
 }
 .task-day-single-div {
   margin-bottom: 10px;
-  border: solid rgb(255, 255, 255) 1px;
 }
 .task-day-single-with-date-div {
   background-color: rgb(255, 255, 255);
@@ -101,6 +100,30 @@
   border: solid rgba(255, 110, 110, 0.449) 1px;
   border-radius: 8px;
   margin-top: 20px;
+}
+.task-day-single-with-date-div:hover {
+  box-shadow: 0px 3px 5px rgb(232, 223, 223);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.task-day-single-with-date-div-active {
+  background-color: rgb(255, 231, 231);
+  box-shadow: 0px 3px 5px rgb(232, 223, 223);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.task-day-single-head-div-active {
+  background-color: #fe6161;
+  color: white;
+}
+
+.task-day-single-body-div-active {
+  background-color: #ffffff;
+  border: solid #ffb6b6 1px;
+}
+.task-day-single-body-discr-p-active {
+  padding: 4px;
 }
 .task-day-single-head-input {
   width: 20px;
@@ -111,6 +134,7 @@
   justify-content: space-between;
   background-color: rgb(251, 213, 213);
   border-radius: 5px;
+  padding: 5px;
 }
 .task-day-single-head-sub-div {
   flex: 1;
@@ -119,9 +143,6 @@
 }
 .task-day-single-head-p {
   margin-left: 10px;
-}
-.task-day-single-body-div {
-  background-color: rgb(255, 255, 255);
 }
 .task-day-single-head-p {
   font-size: 18px;
@@ -133,8 +154,8 @@
   border-radius: 5px;
 }
 .task-day-single-body-discr-p {
-  padding-left: 30px;
   padding: 5px;
+  transition: none;
 }
 @media (max-width: 1485px) {
   .task-day-group-container {
