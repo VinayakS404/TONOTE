@@ -1,3 +1,5 @@
+import { todoStore } from "./todoStore.js";
+
 const menuBtnElement = document.querySelector(".js-settings-icon");
 const menuElement = document.querySelector(".js-menu-active-div");
 const closeElement = document.querySelector(".js-menu-close-icon-img");
@@ -22,3 +24,29 @@ closeElement.addEventListener("click", () => {
   }
   menuActive = !menuActive;
 });
+
+let todoHTML = "";
+
+todoStore.forEach((singleTodo) => {
+  todoHTML += `
+  
+ <div class='task-day-group-container'>
+      <div class='task-day-single-with-date-div'>
+        <p class='task-container-date-p'>${singleTodo.date}</p>
+        <div class='task-day-single-div'>
+          <div class='task-day-single-head-div'>
+            <div class='task-day-single-head-sub-div'>
+              <input type='checkbox' />
+              <p>${singleTodo.heading}</p>
+            </div>
+          </div>
+          <div class='task-day-single-body-div'>
+            <p>${singleTodo.desc}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+});
+
+document.querySelector(".js-task-content-container").innerHTML = todoHTML;

@@ -1,12 +1,37 @@
-const todoStore = [
+export const todoStore = [
   {
     id: 100000,
-<<<<<<< HEAD
+    date: "10/10/2010",
     color: "#3b82f6",
-=======
-    color: 100,
->>>>>>> 349c89411e805212ae50362d8b3a7fd8ba75384b
     heading: "this this the heading",
     desc: "this is the discription",
+  },
+  {
+    id: 100000,
+    date: "10/10/2010",
+    color: "#3b82f6",
+    heading: "this this the heading",
+    desc: "this is the 'DD most commonly refers to a Demand Draft, a secure, prepaid negotiable instrument used for transferring funds, ensuring payment without risk of bouncing. It also refers to Doordarshan, India's state-owned public broadcaster; Due Diligence in finance; or Dear/Darling Daughter in social media",
+  },
+  {
+    id: 100000,
+    date: "10/10/2010",
+    color: "#3b82f6",
+    heading: "this this the heading",
+    desc: "this is the discriptly refers to a Demand Draft, a secure, prepaid neion",
+  },
+  {
+    id: 100000,
+    date: "10/10/2010",
+    color: "#3b82f6",
+    heading: "this this the heading",
+    desc: "this is the discly refers to a Demand Draft, a secure, prepaid ne ly refers to a Demand Draft, a secure, prepaid neription",
+  },
+  {
+    id: 100000,
+    date: "10/10/2010",
+    color: "#3b82f6",
+    heading: "this this the heading",
+    desc: "this is thely refers to a Demand Draft, a secure, prepaid ne discription",
   },
 ];
