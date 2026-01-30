@@ -113,17 +113,21 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
-.task-day-single-head-div-active {
+
+.task-day-single-with-date-div-active .task-day-single-head-div-active {
   background-color: #fe6161;
   color: white;
 }
 
-.task-day-single-body-div-active {
+.task-day-single-with-date-div-active .task-day-single-body-div-active {
   background-color: #ffffff;
   border: solid #ffb6b6 1px;
 }
-.task-day-single-body-discr-p-active {
+.task-day-single-with-date-div-active .task-day-single-body-discr-p-active {
   padding: 4px;
+}
+.task-day-single-with-date-div-active .task-container-date-p-active {
+  color: rgb(0, 0, 0);
 }
 .task-day-single-head-input {
   width: 20px;

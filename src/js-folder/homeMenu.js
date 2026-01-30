@@ -3,9 +3,6 @@ import { todoStore } from "./todoStore.js";
 const menuBtnElement = document.querySelector(".js-settings-icon");
 const menuElement = document.querySelector(".js-menu-active-div");
 const closeElement = document.querySelector(".js-menu-close-icon-img");
-const singleDivElement = document.querySelector(
-  ".js-task-day-single-with-date-div",
-);
 
 let menuActive = false;
 
@@ -53,7 +50,25 @@ todoStore.forEach((singleTodo) => {
 });
 
 document.querySelector(".js-task-content-container").innerHTML = todoHTML;
+const singleDivElement = document.querySelectorAll(
+  ".js-task-day-single-with-date-div",
+);
 
-singleDivElement.addEventListener("click", () => {
-  singleDivElement.classList.add("task-day-single-with-date-div-active");
+singleDivElement.forEach((singleTodoDiv) => {
+  singleTodoDiv.addEventListener("click", () => {
+    singleTodoDiv.classList.add("task-day-single-with-date-div-active");
+    singleTodoDiv
+      .querySelector(".task-day-single-head-div")
+      .classList.add("task-day-single-head-div-active");
+    singleTodoDiv
+      .querySelector(".task-day-single-body-div")
+      .classList.add("task-day-single-body-div-active");
+    singleTodoDiv
+      .querySelector(".task-day-single-body-discr-p")
+      .classList.add("task-day-single-body-discr-p-active");
+
+    singleTodoDiv
+      .querySelector(".task-container-date-p")
+      .classList.add("task-container-date-p-active");
+  });
 });
