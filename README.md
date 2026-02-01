@@ -9,4 +9,4 @@ The project is currently in its **initial development stage** and is still a wor
 - Clean and simple UI
 
 ## Current progress 
-- JS
+- Adding functionalities in JS
