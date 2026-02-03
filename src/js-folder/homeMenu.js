@@ -1,4 +1,5 @@
 import { todoStore } from "./todoStore.js";
+import { triggerEdictpage } from "./edict.js";
 
 const menuBtnElement = document.querySelector(".js-settings-icon");
 const menuElement = document.querySelector(".js-menu-active-div");
@@ -30,8 +31,8 @@ let todoHTML = "";
 todoStore.forEach((singleTodo) => {
   todoHTML += `
   
- <div class='task-day-group-container'>
-      <div class='task-day-single-with-date-div js-task-day-single-with-date-div'>
+ <div class='task-day-group-container' >
+      <div class='task-day-single-with-date-div js-task-day-single-with-date-div' data-todo-name = "${singleTodo.id}">
         <p class='task-container-date-p'>${singleTodo.date}</p>
         <div class='task-day-single-div'>
           <div class='task-day-single-head-div'>
@@ -73,6 +74,7 @@ singleDivElement.forEach((singleTodoDiv) => {
         .querySelector(".task-container-date-p")
         .classList.add("task-container-date-p-active");
 
+      triggerEdictpage(singleTodoDiv.dataset.todoName);
       notTouched = false;
     } else {
       singleTodoDiv.classList.remove("task-day-single-with-date-div-active");
