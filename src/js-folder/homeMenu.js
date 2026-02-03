@@ -55,10 +55,10 @@ const singleDivElement = document.querySelectorAll(
 );
 
 singleDivElement.forEach((singleTodoDiv) => {
-  let nottouched = true;
+  let notTouched = true;
 
   singleTodoDiv.addEventListener("click", () => {
-    if (nottouched) {
+    if (notTouched) {
       singleTodoDiv.classList.add("task-day-single-with-date-div-active");
       singleTodoDiv
         .querySelector(".task-day-single-head-div")
@@ -69,11 +69,11 @@ singleDivElement.forEach((singleTodoDiv) => {
       singleTodoDiv
         .querySelector(".task-day-single-body-discr-p")
         .classList.add("task-day-single-body-discr-p-active");
-
       singleTodoDiv
         .querySelector(".task-container-date-p")
         .classList.add("task-container-date-p-active");
-      nottouched = false;
+
+      notTouched = false;
     } else {
       singleTodoDiv.classList.remove("task-day-single-with-date-div-active");
       singleTodoDiv
@@ -85,11 +85,11 @@ singleDivElement.forEach((singleTodoDiv) => {
       singleTodoDiv
         .querySelector(".task-day-single-body-discr-p")
         .classList.remove("task-day-single-body-discr-p-active");
-
       singleTodoDiv
         .querySelector(".task-container-date-p")
         .classList.remove("task-container-date-p-active");
-      nottouched = true;
+
+      notTouched = true;
     }
   });
 });
