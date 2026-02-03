@@ -55,20 +55,41 @@ const singleDivElement = document.querySelectorAll(
 );
 
 singleDivElement.forEach((singleTodoDiv) => {
-  singleTodoDiv.addEventListener("click", () => {
-    singleTodoDiv.classList.add("task-day-single-with-date-div-active");
-    singleTodoDiv
-      .querySelector(".task-day-single-head-div")
-      .classList.add("task-day-single-head-div-active");
-    singleTodoDiv
-      .querySelector(".task-day-single-body-div")
-      .classList.add("task-day-single-body-div-active");
-    singleTodoDiv
-      .querySelector(".task-day-single-body-discr-p")
-      .classList.add("task-day-single-body-discr-p-active");
+  let nottouched = true;
 
-    singleTodoDiv
-      .querySelector(".task-container-date-p")
-      .classList.add("task-container-date-p-active");
+  singleTodoDiv.addEventListener("click", () => {
+    if (nottouched) {
+      singleTodoDiv.classList.add("task-day-single-with-date-div-active");
+      singleTodoDiv
+        .querySelector(".task-day-single-head-div")
+        .classList.add("task-day-single-head-div-active");
+      singleTodoDiv
+        .querySelector(".task-day-single-body-div")
+        .classList.add("task-day-single-body-div-active");
+      singleTodoDiv
+        .querySelector(".task-day-single-body-discr-p")
+        .classList.add("task-day-single-body-discr-p-active");
+
+      singleTodoDiv
+        .querySelector(".task-container-date-p")
+        .classList.add("task-container-date-p-active");
+      nottouched = false;
+    } else {
+      singleTodoDiv.classList.remove("task-day-single-with-date-div-active");
+      singleTodoDiv
+        .querySelector(".task-day-single-head-div")
+        .classList.remove("task-day-single-head-div-active");
+      singleTodoDiv
+        .querySelector(".task-day-single-body-div")
+        .classList.remove("task-day-single-body-div-active");
+      singleTodoDiv
+        .querySelector(".task-day-single-body-discr-p")
+        .classList.remove("task-day-single-body-discr-p-active");
+
+      singleTodoDiv
+        .querySelector(".task-container-date-p")
+        .classList.remove("task-container-date-p-active");
+      nottouched = true;
+    }
   });
 });
