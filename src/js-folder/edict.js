@@ -4,3 +4,4 @@ export function triggerEdictpage(idd) {
   console.log(idd);
   errorImg.remove();
 }
+//
