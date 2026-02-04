@@ -1,5 +1,5 @@
 import { todoStore } from "./todoStore.js";
-import { triggerEdictpage } from "./edict.js";
+import { triggerEditpage } from "./edit.js";
 
 const menuBtnElement = document.querySelector(".js-settings-icon");
 const menuElement = document.querySelector(".js-menu-active-div");
@@ -74,7 +74,7 @@ singleDivElement.forEach((singleTodoDiv) => {
         .querySelector(".task-container-date-p")
         .classList.add("task-container-date-p-active");
 
-      triggerEdictpage(singleTodoDiv.dataset.todoName);
+      triggerEditpage(singleTodoDiv.dataset.todoName);
       notTouched = false;
     } else {
       singleTodoDiv.classList.remove("task-day-single-with-date-div-active");
