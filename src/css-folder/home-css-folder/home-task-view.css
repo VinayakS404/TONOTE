@@ -1,6 +1,3 @@
-* {
-  transition: all 0.1s ease;
-}
 .task-view-div {
   height: 100%;
   position: relative;
@@ -99,13 +96,25 @@
   border: solid rgba(255, 110, 110, 0.449) 1px;
   border-radius: 8px;
   margin-top: 20px;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    margin 0.2s ease,
+    border 0.2s ease;
 }
-.task-day-single-with-date-div:hover {
-  box-shadow: 0px 3px 5px rgb(232, 223, 223);
-  margin-top: 15px;
-  margin-bottom: 15px;
+.task-day-single-with-date-div:not(
+    .task-day-single-with-date-div-active
+  ):hover {
+  border: solid rgb(218, 93, 93) 1px;
 }
-
+.task-day-single-with-date-div:not(.task-day-single-with-date-div-active):hover
+  .task-day-single-head-div {
+  background-color: rgb(255, 182, 182);
+}
+.task-day-single-with-date-div:not(.task-day-single-with-date-div-active):hover
+  .task-day-single-body-div {
+  background-color: rgb(255, 223, 223);
+}
 .task-day-single-with-date-div-active {
   background-color: rgb(255, 231, 231);
   box-shadow: 0px 3px 5px rgb(232, 223, 223);
