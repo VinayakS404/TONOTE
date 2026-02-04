@@ -1,6 +1,6 @@
 export const todoStore = [
   {
-    id: 400001,
+    id: 100001,
     date: "2018-05-10",
     color: "#3b82f6",
     heading: "Started learning programming",
@@ -8,7 +8,7 @@ export const todoStore = [
     logDesc: "started coding",
   },
   {
-    id: 400002,
+    id: 100002,
     date: "2019-02-18",
     color: "#22c55e",
     heading: "Basic C programming",
@@ -16,7 +16,7 @@ export const todoStore = [
     logDesc: "c basics",
   },
   {
-    id: 400003,
+    id: 100003,
     date: "2020-01-12",
     color: "#f97316",
     heading: "JavaScript introduction",
@@ -24,7 +24,7 @@ export const todoStore = [
     logDesc: "js start",
   },
   {
-    id: 400004,
+    id: 100004,
     date: "2020-09-05",
     color: "#a855f7",
     heading: "DOM manipulation practice",
@@ -32,7 +32,7 @@ export const todoStore = [
     logDesc: "dom work",
   },
   {
-    id: 400005,
+    id: 100005,
     date: "2021-03-14",
     color: "#ef4444",
     heading: "First todo app",
@@ -40,7 +40,7 @@ export const todoStore = [
     logDesc: "todo v1",
   },
   {
-    id: 400006,
+    id: 100006,
     date: "2022-02-02",
     color: "#0ea5e9",
     heading: "Git and GitHub usage",
@@ -48,7 +48,7 @@ export const todoStore = [
     logDesc: "git intro",
   },
   {
-    id: 400007,
+    id: 100007,
     date: "2023-08-07",
     color: "#14b8a6",
     heading: "Notes feature development",
@@ -56,7 +56,7 @@ export const todoStore = [
     logDesc: "notes",
   },
   {
-    id: 400008,
+    id: 100008,
     date: "2024-01-15",
     color: "#6366f1",
     heading: "Tailwind UI redesign",
@@ -64,7 +64,7 @@ export const todoStore = [
     logDesc: "ui redo",
   },
   {
-    id: 400009,
+    id: 100009,
     date: "2024-03-01",
     color: "#ec4899",
     heading: "Edit and delete functionality",
@@ -72,7 +72,7 @@ export const todoStore = [
     logDesc: "crud",
   },
   {
-    id: 400010,
+    id: 100010,
     date: "2024-04-12",
     color: "#f59e0b",
     heading: "Code refactoring",
@@ -80,7 +80,7 @@ export const todoStore = [
     logDesc: "refactor",
   },
   {
-    id: 400011,
+    id: 100011,
     date: "2024-05-18",
     color: "#3b82f6",
     heading: "Search and filter feature",
@@ -88,7 +88,7 @@ export const todoStore = [
     logDesc: "search",
   },
   {
-    id: 400012,
+    id: 100012,
     date: "2024-06-10",
     color: "#22c55e",
     heading: "LocalStorage persistence",
