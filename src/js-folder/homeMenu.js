@@ -55,43 +55,48 @@ const singleDivElement = document.querySelectorAll(
   ".js-task-day-single-with-date-div",
 );
 
+let activeTodoDiv = null;
+
 singleDivElement.forEach((singleTodoDiv) => {
-  let notTouched = true;
-
   singleTodoDiv.addEventListener("click", () => {
-    if (notTouched) {
-      singleTodoDiv.classList.add("task-day-single-with-date-div-active");
-      singleTodoDiv
-        .querySelector(".task-day-single-head-div")
-        .classList.add("task-day-single-head-div-active");
-      singleTodoDiv
-        .querySelector(".task-day-single-body-div")
-        .classList.add("task-day-single-body-div-active");
-      singleTodoDiv
-        .querySelector(".task-day-single-body-discr-p")
-        .classList.add("task-day-single-body-discr-p-active");
-      singleTodoDiv
-        .querySelector(".task-container-date-p")
-        .classList.add("task-container-date-p-active");
-
-      triggerEditpage(singleTodoDiv.dataset.todoName);
-      notTouched = false;
-    } else {
-      singleTodoDiv.classList.remove("task-day-single-with-date-div-active");
-      singleTodoDiv
+    if (activeTodoDiv && activeTodoDiv !== singleTodoDiv) {
+      activeTodoDiv.classList.remove("task-day-single-with-date-div-active");
+      activeTodoDiv
         .querySelector(".task-day-single-head-div")
         .classList.remove("task-day-single-head-div-active");
-      singleTodoDiv
+      activeTodoDiv
         .querySelector(".task-day-single-body-div")
         .classList.remove("task-day-single-body-div-active");
-      singleTodoDiv
+      activeTodoDiv
         .querySelector(".task-day-single-body-discr-p")
         .classList.remove("task-day-single-body-discr-p-active");
-      singleTodoDiv
+      activeTodoDiv
         .querySelector(".task-container-date-p")
         .classList.remove("task-container-date-p-active");
-
-      notTouched = true;
     }
+
+    const isActive = singleTodoDiv === activeTodoDiv;
+
+    if (isActive) {
+      activeTodoDiv = null;
+      return;
+    }
+
+    singleTodoDiv.classList.add("task-day-single-with-date-div-active");
+    singleTodoDiv
+      .querySelector(".task-day-single-head-div")
+      .classList.add("task-day-single-head-div-active");
+    singleTodoDiv
+      .querySelector(".task-day-single-body-div")
+      .classList.add("task-day-single-body-div-active");
+    singleTodoDiv
+      .querySelector(".task-day-single-body-discr-p")
+      .classList.add("task-day-single-body-discr-p-active");
+    singleTodoDiv
+      .querySelector(".task-container-date-p")
+      .classList.add("task-container-date-p-active");
+
+    triggerEditpage(Number(singleTodoDiv.dataset.todoName));
+    activeTodoDiv = singleTodoDiv;
   });
 });
