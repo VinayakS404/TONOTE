@@ -1,6 +1,7 @@
 const errorImg = document.querySelector(".error-img");
 const innerDiv = document.querySelector(".edit-div");
 import { todoStore } from "./todoStore.js";
+import { renderTodoList } from "./homeMenu.js";
 
 export function triggerEditpage(idd) {
   idd = Number(idd);
@@ -40,4 +41,19 @@ export function triggerEditpage(idd) {
     dateInp.value = selectedTodo.date;
     textAreaInp.value = selectedTodo.desc;
   }
+
+  const textArea = document.querySelector(".textarea-inp");
+  const SaveBtn = document.querySelector(".save-btn");
+
+  SaveBtn.addEventListener("click", () => {
+    const newHeading = headingInp.value;
+    const newDesc = textArea.value;
+    const newDate = dateInp.value;
+
+    selectedTodo.heading = newHeading;
+    selectedTodo.desc = newDesc;
+    selectedTodo.date = newDate;
+    triggerEditpage(idd);
+    renderTodoList();
+  });
 }

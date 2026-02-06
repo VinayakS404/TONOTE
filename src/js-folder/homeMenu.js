@@ -26,10 +26,11 @@ closeElement.addEventListener("click", () => {
   menuActive = !menuActive;
 });
 
-let todoHTML = "";
+export function renderTodoList() {
+  let todoHTML = "";
 
-todoStore.forEach((singleTodo) => {
-  todoHTML += `
+  todoStore.forEach((singleTodo) => {
+    todoHTML += `
   
  <div class='task-day-group-container' >
       <div class='task-day-single-with-date-div js-task-day-single-with-date-div' data-todo-name = "${singleTodo.id}">
@@ -48,9 +49,10 @@ todoStore.forEach((singleTodo) => {
       </div>
     </div>
   `;
-});
-
-document.querySelector(".js-task-content-container").innerHTML = todoHTML;
+  });
+  document.querySelector(".js-task-content-container").innerHTML = todoHTML;
+}
+renderTodoList();
 const singleDivElement = document.querySelectorAll(
   ".js-task-day-single-with-date-div",
 );
