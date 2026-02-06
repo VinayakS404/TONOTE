@@ -94,6 +94,9 @@ textarea {
   border-radius: 10px;
   padding: 10px;
 }
+textarea:focus {
+  outline: none;
+}
 .save-btn {
   height: 50px;
   padding: 0 15px;
@@ -120,7 +123,6 @@ textarea {
   box-shadow: none;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   margin-top: 22px;
-  margin-left: 2px;
   margin-bottom: -2px;
 }
 .delete-btn {
@@ -149,6 +151,5 @@ textarea {
   box-shadow: none;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   margin-top: 22px;
-  margin-left: 2px;
   margin-bottom: -2px;
 }
