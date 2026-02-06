@@ -4,11 +4,15 @@ ToNote is a simple web application that combines a **Todo List** and **Notes** i
 The project is currently in its **initial development stage** and is still a work in progress.
 
 ## Features
+
 - Todo list interface
 - Notes section
 - Clean and simple UI
 
-## Current progress 
+## Current progress
+
 - Adding functionalities in JS
+
 ## future plane
+
 - Add tailwind css
