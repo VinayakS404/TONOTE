@@ -1,4 +1,4 @@
-export const todoStore = [
+export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
   {
     id: 100001,
     date: "2018-05-10",
@@ -96,3 +96,4 @@ export const todoStore = [
     logDesc: "storage",
   },
 ];
+localStorage.setItem("todoStore", JSON.stringify(todoStore));
