@@ -44,6 +44,7 @@ export function triggerEditpage(idd) {
 
   const textArea = document.querySelector(".textarea-inp");
   const SaveBtn = document.querySelector(".save-btn");
+  const deleteBtn = document.querySelector(".delete-btn");
 
   SaveBtn.addEventListener("click", () => {
     const newHeading = headingInp.value;
@@ -57,4 +58,5 @@ export function triggerEditpage(idd) {
     localStorage.setItem("todoStore", JSON.stringify(todoStore));
     window.location.reload();
   });
+  dateInp.addEventListener("click", () => {});
 }
