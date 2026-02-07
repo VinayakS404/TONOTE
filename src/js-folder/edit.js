@@ -53,7 +53,8 @@ export function triggerEditpage(idd) {
     selectedTodo.heading = newHeading;
     selectedTodo.desc = newDesc;
     selectedTodo.date = newDate;
-    triggerEditpage(idd);
     renderTodoList();
+    localStorage.setItem("todoStore", JSON.stringify(todoStore));
+    window.location.reload();
   });
 }
