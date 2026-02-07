@@ -26,32 +26,35 @@ closeElement.addEventListener("click", () => {
   menuActive = !menuActive;
 });
 
+const taskContainer = document.querySelector(".js-task-content-container");
+
 export function renderTodoList() {
   let todoHTML = "";
 
   todoStore.forEach((singleTodo) => {
     todoHTML += `
   
- <div class='task-day-group-container' >
-      <div class='task-day-single-with-date-div js-task-day-single-with-date-div' data-todo-name = "${singleTodo.id}">
-        <p class='task-container-date-p'>${singleTodo.date}</p>
-        <div class='task-day-single-div'>
-          <div class='task-day-single-head-div'>
-            <div class='task-day-single-head-sub-div'>
-              <input type='checkbox' />
-              <p>${singleTodo.heading}</p>
+      <div class='task-day-group-container' >
+            <div class='task-day-single-with-date-div js-task-day-single-with-date-div' data-todo-name = "${singleTodo.id}">
+              <p class='task-container-date-p'>${singleTodo.date}</p>
+              <div class='task-day-single-div'>
+                <div class='task-day-single-head-div'>
+                  <div class='task-day-single-head-sub-div'>
+                    <input type='checkbox' />
+                    <p>${singleTodo.heading}</p>
+                  </div>
+                </div>
+                <div class='task-day-single-body-div'>
+                  <p class="task-day-single-body-discr-p">${singleTodo.desc}</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class='task-day-single-body-div'>
-            <p class="task-day-single-body-discr-p">${singleTodo.desc}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
+    `;
   });
-  document.querySelector(".js-task-content-container").innerHTML = todoHTML;
+  taskContainer.innerHTML = todoHTML;
 }
+
 renderTodoList();
 const singleDivElement = document.querySelectorAll(
   ".js-task-day-single-with-date-div",
