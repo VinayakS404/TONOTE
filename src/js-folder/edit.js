@@ -20,8 +20,8 @@ export function triggerEditpage(idd) {
         <textarea class="textarea-inp" placeholder=""></textarea>
       </div>
       <div class="footer-div">
-        <button class="save-btn">Save changes</button>
         <button class=" delete-btn">delete</button>
+        <button class="save-btn">Save changes</button>
       </div>
     </div>
   `;
@@ -53,10 +53,19 @@ export function triggerEditpage(idd) {
 
     selectedTodo.heading = newHeading;
     selectedTodo.desc = newDesc;
-    selectedTodo.date = newDate;
     renderTodoList();
     localStorage.setItem("todoStore", JSON.stringify(todoStore));
     window.location.reload();
   });
-  dateInp.addEventListener("click", () => {});
+
+  deleteBtn.addEventListener("click", () => {
+    const index = todoStore.findIndex((item) => item.id === idd);
+
+    if (index !== -1) {
+      todoStore.splice(index, 1);
+    }
+    renderTodoList();
+    localStorage.setItem("todoStore", JSON.stringify(todoStore));
+    window.location.reload();
+  });
 }
