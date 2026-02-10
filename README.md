@@ -12,7 +12,3 @@ The project is currently in its **initial development stage** and is still a wor
 ## Current progress
 
 - Adding functionalities in JS
-
-## future plane
-
-- Add tailwind css
