@@ -12,7 +12,6 @@ menuBtnElement.addEventListener("click", () => {
     menuElement.classList.remove("menu-active-div-active");
   } else {
     menuElement.classList.add("menu-active-div-active");
-    console.log("HI");
   }
   menuActive = !menuActive;
 });
@@ -21,7 +20,6 @@ closeElement.addEventListener("click", () => {
     menuElement.classList.remove("menu-active-div-active");
   } else {
     menuElement.classList.add("menu-active-div-active");
-    console.log("HI");
   }
   menuActive = !menuActive;
 });
@@ -40,7 +38,7 @@ export function renderTodoList() {
               <div class='task-day-single-div'>
                 <div class='task-day-single-head-div'>
                   <div class='task-day-single-head-sub-div'>
-                    <input type='checkbox' />
+                    <input class='js-check' type='checkbox' name="${singleTodo.id}" />
                     <p>${singleTodo.heading}</p>
                   </div>
                 </div>
@@ -64,6 +62,7 @@ let activeTodoDiv = null;
 
 singleDivElement.forEach((singleTodoDiv) => {
   singleTodoDiv.addEventListener("click", () => {
+    console.log(todoStore);
     if (activeTodoDiv && activeTodoDiv !== singleTodoDiv) {
       activeTodoDiv.classList.remove("task-day-single-with-date-div-active");
       activeTodoDiv
@@ -80,7 +79,7 @@ singleDivElement.forEach((singleTodoDiv) => {
         .classList.remove("task-container-date-p-active");
     }
 
-    const isActive = singleTodoDiv === activeTodoDiv;
+    const isActive = singleTodoDiv === activeTodoDiv; 
 
     if (isActive) {
       activeTodoDiv = null;
@@ -104,4 +103,25 @@ singleDivElement.forEach((singleTodoDiv) => {
     triggerEditpage(Number(singleTodoDiv.dataset.todoName));
     activeTodoDiv = singleTodoDiv;
   });
+});
+
+const checkInp = document.querySelectorAll(".js-check");
+checkInp.forEach((singleCheck) => {
+  singleCheck.addEventListener("change", (event) => {
+    const name = event.target.name;
+    if (event.target.checked) {
+      todoStore.forEach((singleTodo) => {
+        if (singleTodo.id == name) {
+          singleTodo.checked = true;
+        }
+      });
+    } else {
+      todoStore.forEach((singleTodo) => {
+        if (singleTodo.id == name) {
+          singleTodo.checked = false;
+        }
+      });
+    }
+  });
+  localStorage.setItem("todoStore", JSON.stringify(todoStore));
 });

@@ -6,6 +6,7 @@ export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
     heading: "Started learning programming",
     desc: "Began exploring programming fundamentals by understanding how computers execute instructions, how variables store data, and how basic logic works using simple examples and practice problems.",
     logDesc: "started coding",
+    checked: false,
   },
   {
     id: 100002,
@@ -14,6 +15,7 @@ export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
     heading: "Basic C programming",
     desc: "Learned syntax, loops, conditions, and functions.",
     logDesc: "c basics",
+    checked: false,
   },
   {
     id: 100003,
@@ -22,6 +24,7 @@ export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
     heading: "JavaScript introduction",
     desc: "Started JavaScript by learning how it runs in the browser, how scripts interact with HTML, and how events, variables, and functions are used to build interactive web pages.",
     logDesc: "js start",
+    checked: false,
   },
   {
     id: 100004,
@@ -30,6 +33,7 @@ export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
     heading: "DOM manipulation practice",
     desc: "Manipulated HTML elements dynamically using JavaScript, practiced query selectors, event listeners, and updated UI based on user actions.",
     logDesc: "dom work",
+    checked: false,
   },
   {
     id: 100005,
@@ -38,6 +42,7 @@ export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
     heading: "First todo app",
     desc: "Built a simple todo application with add and delete functionality, understood how application state changes and how user input drives UI updates.",
     logDesc: "todo v1",
+    checked: false,
   },
   {
     id: 100006,
@@ -46,6 +51,7 @@ export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
     heading: "Git and GitHub usage",
     desc: "Learned version control concepts including commits, branches, merges, and resolving conflicts while maintaining a clean project history.",
     logDesc: "git intro",
+    checked: false,
   },
   {
     id: 100007,
@@ -54,6 +60,7 @@ export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
     heading: "Notes feature development",
     desc: "Implemented a notes feature that allows users to write longer text entries, associate them with dates, and manage content efficiently within the application.",
     logDesc: "notes",
+    checked: false,
   },
   {
     id: 100008,
@@ -62,6 +69,7 @@ export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
     heading: "Tailwind UI redesign",
     desc: "Redesigned the application interface using Tailwind CSS, focusing on spacing, typography, color consistency, and responsive behavior across screen sizes.",
     logDesc: "ui redo",
+    checked: false,
   },
   {
     id: 100009,
@@ -70,6 +78,7 @@ export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
     heading: "Edit and delete functionality",
     desc: "Added full CRUD support by implementing edit and delete actions, ensuring data updates correctly reflect in the UI and stored state.",
     logDesc: "crud",
+    checked: false,
   },
   {
     id: 100010,
@@ -78,6 +87,7 @@ export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
     heading: "Code refactoring",
     desc: "Refactored existing code to improve readability, reduce duplication, and make the todo store logic easier to maintain and extend.",
     logDesc: "refactor",
+    checked: false,
   },
   {
     id: 100011,
@@ -86,6 +96,7 @@ export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
     heading: "Search and filter feature",
     desc: "Implemented text-based search and filtering so users can quickly find notes by keywords in headings or descriptions.",
     logDesc: "search",
+    checked: false,
   },
   {
     id: 100012,
@@ -94,6 +105,7 @@ export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
     heading: "LocalStorage persistence",
     desc: "Integrated browser localStorage to persist user data across sessions, preventing data loss on refresh or browser close.",
     logDesc: "storage",
+    checked: false,
   },
 ];
 localStorage.setItem("todoStore", JSON.stringify(todoStore));
