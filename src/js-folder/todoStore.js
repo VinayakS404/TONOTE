@@ -1,4 +1,6 @@
-export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
+const stored = JSON.parse(localStorage.getItem("todoStore"));
+
+const defaults = [
   {
     id: 100001,
     date: "2018-05-10",
@@ -108,4 +110,10 @@ export const todoStore = JSON.parse(localStorage.getItem("todoStore")) || [
     checked: false,
   },
 ];
+
+export const todoStore = (stored || defaults).map((item) => ({
+  ...item,
+  checked: item.checked ?? false,
+}));
+
 localStorage.setItem("todoStore", JSON.stringify(todoStore));
