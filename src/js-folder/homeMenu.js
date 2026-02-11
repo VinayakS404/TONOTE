@@ -79,7 +79,7 @@ singleDivElement.forEach((singleTodoDiv) => {
         .classList.remove("task-container-date-p-active");
     }
 
-    const isActive = singleTodoDiv === activeTodoDiv; 
+    const isActive = singleTodoDiv === activeTodoDiv;
 
     if (isActive) {
       activeTodoDiv = null;
@@ -122,6 +122,6 @@ checkInp.forEach((singleCheck) => {
         }
       });
     }
+    localStorage.setItem("todoStore", JSON.stringify(todoStore));
   });
-  localStorage.setItem("todoStore", JSON.stringify(todoStore));
 });
