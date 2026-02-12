@@ -193,3 +193,7 @@
     width: 550px;
   }
 }
+.heading-home-active{
+text-decoration: line-through;
+color: gray;
+}

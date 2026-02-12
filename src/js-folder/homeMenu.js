@@ -39,7 +39,7 @@ export function renderTodoList() {
                 <div class='task-day-single-head-div'>
                   <div class='task-day-single-head-sub-div'>
                     <input class='js-check' type='checkbox' ${singleTodo.checked ? "checked" : ""} name="${singleTodo.id}" />
-                    <p>${singleTodo.heading}</p>
+                    <p class="heading-home">${singleTodo.heading}</p>
                   </div>
                 </div>
                 <div class='task-day-single-body-div'>
@@ -54,6 +54,7 @@ export function renderTodoList() {
 }
 
 renderTodoList();
+
 const singleDivElement = document.querySelectorAll(
   ".js-task-day-single-with-date-div",
 );
@@ -123,5 +124,35 @@ checkInp.forEach((singleCheck) => {
       });
     }
     localStorage.setItem("todoStore", JSON.stringify(todoStore));
+    singleDivElement.forEach((singleDiv) => {
+      const id = Number(singleDiv.dataset.todoName);
+
+      const matchedTodo = todoStore.find((singleTodo) => singleTodo.id === id);
+
+      if (matchedTodo && matchedTodo.checked) {
+        singleDiv
+          .querySelector(".heading-home")
+          .classList.add("heading-home-active");
+      } else {
+        singleDiv
+          .querySelector(".heading-home")
+          .classList.remove("heading-home-active");
+      }
+    });
   });
+});
+singleDivElement.forEach((singleDiv) => {
+  const id = Number(singleDiv.dataset.todoName);
+
+  const matchedTodo = todoStore.find((singleTodo) => singleTodo.id === id);
+
+  if (matchedTodo && matchedTodo.checked) {
+    singleDiv
+      .querySelector(".heading-home")
+      .classList.add("heading-home-active");
+  } else {
+    singleDiv
+      .querySelector(".heading-home")
+      .classList.remove("heading-home-active");
+  }
 });
