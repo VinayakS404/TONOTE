@@ -38,7 +38,7 @@ export function renderTodoList() {
               <div class='task-day-single-div'>
                 <div class='task-day-single-head-div'>
                   <div class='task-day-single-head-sub-div'>
-                    <input class='js-check' type='checkbox' name="${singleTodo.id}" />
+                    <input class='js-check' type='checkbox' ${singleTodo.checked ? "checked" : ""} name="${singleTodo.id}" />
                     <p>${singleTodo.heading}</p>
                   </div>
                 </div>
