@@ -8,7 +8,7 @@ const defaults = [
     heading: "Started learning programming",
     desc: "Began exploring programming fundamentals by understanding how computers execute instructions, how variables store data, and how basic logic works using simple examples and practice problems.",
     logDesc: "started coding",
-    checked: false,
+    checked: true,
   },
   {
     id: 100002,
@@ -44,7 +44,7 @@ const defaults = [
     heading: "First todo app",
     desc: "Built a simple todo application with add and delete functionality, understood how application state changes and how user input drives UI updates.",
     logDesc: "todo v1",
-    checked: false,
+    checked: true,
   },
   {
     id: 100006,
@@ -53,7 +53,7 @@ const defaults = [
     heading: "Git and GitHub usage",
     desc: "Learned version control concepts including commits, branches, merges, and resolving conflicts while maintaining a clean project history.",
     logDesc: "git intro",
-    checked: false,
+    checked: true,
   },
   {
     id: 100007,
