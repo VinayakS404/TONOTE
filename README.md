@@ -1,14 +1,4 @@
-# ToNote
+# ToNote – Todo Application
 
-ToNote is a simple web application that combines a **Todo List** and **Notes** in one place.  
-The project is currently in its **initial development stage** and is still a work in progress.
-
-## Features
-
-- Todo list interface
-- Notes section
-- Clean and simple UI
-
-## Current progress
-
-- Adding functionalities in JS
+ToNote is a lightweight and minimal **Todo application** built to manage daily tasks efficiently.  
+The project is currently under active development, with core features being implemented and refined.
