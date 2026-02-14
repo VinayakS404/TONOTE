@@ -20,7 +20,7 @@ export function triggerEditpage(idd) {
         </div>
       </div>
       <div class="middle-div">
-        <textarea class="textarea-inp" placeholder=""></textarea>
+        <textarea class="textarea-inp" placeholder="Describe your task here..."></textarea>
       </div>
       <div class="footer-div">
         <button class=" delete-btn">delete</button>
@@ -77,7 +77,7 @@ export function addNewTodo() {
     id: Date.now(),
     date: new Date().toISOString().split("T")[0],
     heading: "New Task",
-    desc: "Task description...",
+    desc: "",
     checked: false,
   };
   todoStore.push(newTodo);
