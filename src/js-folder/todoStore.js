@@ -1,7 +1,7 @@
 const stored = JSON.parse(localStorage.getItem("todoStore"));
 
 const defaults = [
-  {
+  /*{
     id: 100001,
     date: "2018-05-10",
     color: "#3b82f6",
@@ -108,7 +108,7 @@ const defaults = [
     desc: "Integrated browser localStorage to persist user data across sessions, preventing data loss on refresh or browser close.",
     logDesc: "storage",
     checked: false,
-  },
+  },*/
 ];
 
 export const todoStore = (stored || defaults).map((item) => ({

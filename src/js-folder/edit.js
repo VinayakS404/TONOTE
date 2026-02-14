@@ -5,8 +5,11 @@ import { renderTodoList } from "./homeMenu.js";
 
 export function triggerEditpage(idd) {
   idd = Number(idd);
-  console.log(idd);
-  errorImg.remove();
+
+  if (errorImg) {
+    errorImg.remove();
+  }
+
   innerDiv.innerHTML = `
     <div class="inner-div">
       <div class="header-div">
@@ -30,34 +33,28 @@ export function triggerEditpage(idd) {
   const dateInp = document.querySelector(".date-inp");
   const textAreaInp = document.querySelector(".textarea-inp");
 
-  let selectedTodo;
-  todoStore.forEach((singleTodo) => {
-    if (singleTodo.id === idd) {
-      selectedTodo = singleTodo;
-    }
-  });
-  if (selectedTodo) {
-    headingInp.value = selectedTodo.heading;
-    dateInp.value = selectedTodo.date;
-    textAreaInp.value = selectedTodo.desc;
+  const selectedTodo = todoStore.find((todo) => todo.id === idd);
 
-    if (selectedTodo.checked) {
-      headingInp.classList.add("heading-home-active");
-    }
+  if (!selectedTodo) {
+    return;
   }
 
-  const textArea = document.querySelector(".textarea-inp");
+  headingInp.value = selectedTodo.heading;
+  dateInp.value = selectedTodo.date;
+  textAreaInp.value = selectedTodo.desc;
+
+  if (selectedTodo.checked) {
+    headingInp.classList.add("heading-home-active");
+  }
+
   const SaveBtn = document.querySelector(".save-btn");
   const deleteBtn = document.querySelector(".delete-btn");
 
   SaveBtn.addEventListener("click", () => {
-    const newHeading = headingInp.value;
-    const newDesc = textArea.value;
-    const newDate = dateInp.value;
+    selectedTodo.heading = headingInp.value;
+    selectedTodo.desc = textAreaInp.value;
+    selectedTodo.date = dateInp.value;
 
-    selectedTodo.heading = newHeading;
-    selectedTodo.desc = newDesc;
-    selectedTodo.date = newDate;
     renderTodoList();
     localStorage.setItem("todoStore", JSON.stringify(todoStore));
     window.location.reload();
@@ -74,18 +71,16 @@ export function triggerEditpage(idd) {
     window.location.reload();
   });
 }
+
 export function addNewTodo() {
-  console.log("1st" + todoStore);
-  todoStore.push({
-    id: 100001,
-    date: "2018-05-10",
-    color: "#3b82f6",
-    heading: "Started learning programming",
-    desc: "Began exploring programming fundamentals by understanding how computers execute instructions, how variables store data, and how basic logic works using simple examples and practice problems.",
-    logDesc: "started coding",
+  const newTodo = {
+    id: Date.now(),
+    date: new Date().toISOString().split("T")[0],
+    heading: "New Task",
+    desc: "Task description...",
     checked: false,
-  });
-  console.log("2nd" + todoStore);
+  };
+  todoStore.push(newTodo);
   localStorage.setItem("todoStore", JSON.stringify(todoStore));
-  window.location.reload();
+  return newTodo;
 }
