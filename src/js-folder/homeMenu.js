@@ -166,16 +166,13 @@ nowBtn.addEventListener("click", () => {
   window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
 });
 taskContainer.addEventListener("click", (event) => {
-  // Find the closest parent that is a todo item
   const todoElement = event.target.closest(".js-task-day-single-with-date-div");
   
   if (todoElement) {
     const todoId = Number(todoElement.dataset.todoName);
     
-    // 1. Trigger the edit page
     triggerEditpage(todoId);
     
-    // 2. Handle visual "active" states
     document.querySelectorAll(".js-task-day-single-with-date-div").forEach(div => {
        div.classList.remove("task-day-single-with-date-div-active");
     });
