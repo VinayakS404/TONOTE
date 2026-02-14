@@ -77,7 +77,7 @@ export function addNewTodo() {
     id: Date.now(),
     date: new Date().toISOString().split("T")[0],
     heading: "New Task",
-    desc: "",
+    desc: "Describe your task here...",
     checked: false,
   };
   todoStore.push(newTodo);
