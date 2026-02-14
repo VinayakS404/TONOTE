@@ -139,6 +139,7 @@ checkInp.forEach((singleCheck) => {
           .classList.remove("heading-home-active");
       }
     });
+    window.location.reload();
   });
 });
 singleDivElement.forEach((singleDiv) => {

@@ -40,6 +40,10 @@ export function triggerEditpage(idd) {
     headingInp.value = selectedTodo.heading;
     dateInp.value = selectedTodo.date;
     textAreaInp.value = selectedTodo.desc;
+
+    if (selectedTodo.checked) {
+      headingInp.classList.add("heading-home-active");
+    }
   }
 
   const textArea = document.querySelector(".textarea-inp");
