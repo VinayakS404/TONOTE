@@ -1,5 +1,6 @@
 import { todoStore } from "./todoStore.js";
 import { triggerEditpage } from "./edit.js";
+import { addNewTodo } from "./edit.js";
 
 const menuBtnElement = document.querySelector(".js-settings-icon");
 const menuElement = document.querySelector(".js-menu-active-div");
@@ -156,4 +157,10 @@ singleDivElement.forEach((singleDiv) => {
       .querySelector(".heading-home")
       .classList.remove("heading-home-active");
   }
+});
+
+const nowBtn = document.querySelector(".search-sub-img");
+
+nowBtn.addEventListener("click", () => {
+  addNewTodo();
 });

@@ -74,3 +74,18 @@ export function triggerEditpage(idd) {
     window.location.reload();
   });
 }
+export function addNewTodo() {
+  console.log("1st" + todoStore);
+  todoStore.push({
+    id: 100001,
+    date: "2018-05-10",
+    color: "#3b82f6",
+    heading: "Started learning programming",
+    desc: "Began exploring programming fundamentals by understanding how computers execute instructions, how variables store data, and how basic logic works using simple examples and practice problems.",
+    logDesc: "started coding",
+    checked: false,
+  });
+  console.log("2nd" + todoStore);
+  localStorage.setItem("todoStore", JSON.stringify(todoStore));
+  window.location.reload();
+}
