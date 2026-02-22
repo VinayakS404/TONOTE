@@ -45,4 +45,3 @@ It focuses on clarity, usability, and clean interface design.
 - Dark mode  
 - Responsive layout enhancements  
 
----
