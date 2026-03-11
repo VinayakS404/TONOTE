@@ -1,47 +1,47 @@
-# ToNote – Todo Application
+# ToNote – Simple Task Manager
 
-ToNote is a lightweight and minimal **Todo application** built to manage daily tasks efficiently.  
-The project is currently under active development, with core features being implemented and refined.
----
-
-## 🚀 Overview
-
-The goal of ToNote is to provide a simple, distraction-free environment for tracking tasks.  
-It focuses on clarity, usability, and clean interface design.
+ToNote is a minimal **task management application** designed to help users organize their daily activities.  
+It focuses on simplicity and a clear interface so tasks can be created and managed without distractions.
 
 ---
 
-## ✨ Features
+## 📖 About the Project
 
-- Create new tasks  
-- Edit existing tasks  
-- Delete tasks  
-- Mark tasks as completed  
-- Persistent task storage using Local Storage  
-- Clean and minimal UI  
+The purpose of ToNote is to provide a lightweight space where users can quickly add, track, and manage their tasks.  
+The project is still being developed, and additional improvements are planned.
 
 ---
 
-## 🛠️ Tech Stack
+## ⚙️ Main Functions
+
+- Add new tasks
+- Update task details
+- Remove tasks
+- Mark tasks as finished
+- Store tasks using Local Storage
+- Simple and clean interface
+
+---
+
+## 🧰 Technologies Used
 
 - HTML  
 - CSS  
-- JavaScript (Vanilla JS)
+- JavaScript (Vanilla)
 
 ---
 
-## 📌 Current Status
+## 🚧 Development Status
 
-- Core task functionalities implemented  
-- Local Storage integration in progress  
-- UI improvements ongoing  
+- Basic task operations completed
+- Local Storage functionality being integrated
+- User interface adjustments ongoing
 
 ---
 
-## 📈 Future Improvements
+## 🔮 Planned Features
 
-- Task filtering (All / Completed / Pending)  
-- Due dates support  
-- Dark mode  
-- Responsive layout enhancements  
-
+- Task filters (All / Completed / Active)
+- Support for task deadlines
+- Dark theme option
+- Better responsiveness for different screen sizes
