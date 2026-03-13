@@ -1,47 +1,48 @@
 # ToNote – Simple Task Manager
 
-ToNote is a minimal **task management application** designed to help users organize their daily activities.  
-It focuses on simplicity and a clear interface so tasks can be created and managed without distractions.
+ToNote is a lightweight task management application that helps users keep track of their daily activities.  
+The application is designed with a minimal interface so users can focus on their tasks without unnecessary distractions.
 
 ---
 
-## 📖 About the Project
+## 📌 Project Overview
 
-The purpose of ToNote is to provide a lightweight space where users can quickly add, track, and manage their tasks.  
-The project is still being developed, and additional improvements are planned.
-
----
-
-## ⚙️ Main Functions
-
-- Add new tasks
-- Update task details
-- Remove tasks
-- Mark tasks as finished
-- Store tasks using Local Storage
-- Simple and clean interface
+ToNote was created to provide a simple and efficient way to manage personal tasks.  
+Users can quickly add tasks, update them when needed, and remove them after completion.  
+The goal of the project is to maintain clarity, speed, and ease of use.
 
 ---
 
-## 🧰 Technologies Used
+## ✨ Features
 
-- HTML  
-- CSS  
+- Create new tasks
+- Edit existing tasks
+- Delete tasks
+- Mark tasks as completed
+- Save tasks using Local Storage
+- Clean and minimal user interface
+
+---
+
+## 🛠 Tech Stack
+
+- HTML
+- CSS
 - JavaScript (Vanilla)
 
 ---
 
-## 🚧 Development Status
+## 🚧 Current Progress
 
-- Basic task operations completed
-- Local Storage functionality being integrated
-- User interface adjustments ongoing
+- Core task management features implemented
+- Local Storage support in progress
+- UI improvements being refined
 
 ---
 
-## 🔮 Planned Features
+## 🔭 Future Improvements
 
-- Task filters (All / Completed / Active)
-- Support for task deadlines
-- Dark theme option
-- Better responsiveness for different screen sizes
+- Task filtering (All / Active / Completed)
+- Optional task deadlines
+- Dark mode support
+- Improved mobile responsiveness
