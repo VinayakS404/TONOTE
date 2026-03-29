@@ -35,11 +35,4 @@ ToNote provides a straightforward way to manage personal tasks. Users can quickl
 - Local Storage integration in progress  
 - UI design under refinement  
 
----
 
-## Future Improvements
-
-- Task filtering (All / Active / Completed)  
-- Deadline and reminder support  
-- Dark mode  
-- Enhanced mobile responsiveness
