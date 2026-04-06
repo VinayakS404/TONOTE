@@ -29,10 +29,3 @@ ToNote provides a straightforward way to manage personal tasks. Users can quickl
 
 ---
 
-## Current Progress
-
-- Core task management functionality completed  
-- Local Storage integration in progress  
-- UI design under refinement  
-
-
