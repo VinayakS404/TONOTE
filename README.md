@@ -19,13 +19,3 @@ ToNote provides a straightforward way to manage personal tasks. Users can quickl
 - Persistent data storage using Local Storage  
 - Clean and minimal UI design  
 
----
-
-## Tech Stack
-
-- HTML  
-- CSS  
-- JavaScript (Vanilla)
-
----
-
