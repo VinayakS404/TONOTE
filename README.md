@@ -8,6 +8,8 @@ ToNote is a lightweight task management application designed to help users organ
 
 ToNote provides a straightforward way to manage personal tasks. Users can quickly add, update, and remove tasks while maintaining a clear view of their progress. The application is built with performance and usability in mind, ensuring a smooth and distraction-free experience.
 
+---
+
 ## Features
 
 - Add new tasks instantly  
